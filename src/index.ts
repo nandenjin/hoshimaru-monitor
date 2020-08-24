@@ -13,7 +13,7 @@ export function main(): void {
     if (e.html().indexOf('コスモ星丸') > -1) {
       const text = e.find('.c-charaItem_body_count').text()
       console.log(text)
-      if (text.match(/([0-9]+)/)) {
+      if (text.replace(/,/g, '').match(/([0-9]+)/)) {
         const n = +RegExp.$1
         console.log(n)
 
