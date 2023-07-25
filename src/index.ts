@@ -1,4 +1,4 @@
-declare let Cheerio: CheerioAPI
+declare const Cheerio: cheerio.CheerioAPI
 
 const SPREADSHEET_ID = PropertiesService.getScriptProperties().getProperty(
   'spreadsheetId'
